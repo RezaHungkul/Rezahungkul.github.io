@@ -92,19 +92,19 @@ section::before {
     grid-area: work-1;
 }
 #work-1:hover::after{
-    content: 'sofware';
+    content: 'Content Creator';
 }
 #work-2 {
     grid-area: work-2;
 }
 #work-2:hover::after{
-    content: 'software project';
+    content: 'Web Developer';
 }
 #work-3 {
     grid-area: work-3;
 }
 #work-3:hover::after{
-    content: 'helver';
+    content: 'Helver';
 }
 .contact {
     padding-bottom: 128px;
