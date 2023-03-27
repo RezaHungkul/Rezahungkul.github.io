@@ -5,13 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand fs-4 fw-bold" href="#">Reza</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section id="home" class="home container">
+        <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+            <div class="col-12 col-md-8">
+                <h3 class="fw-semibold">Hi! I am</h3>
+                <h1 class="fw-bold">Reza</h1>
+                <p>I am Software Engineer base in Indonesia</p>
+                <a class="btn button" href="images/FB_IMG_1679676082238-modified.png" download>Resume</a>
+            </div>
+            <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+                <img src="images/FB_IMG_1679676082238-modified.png" alt="Potrait">
+            </div>
+        </div>
+        <a  href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+            <div class="text-dark">More Info</div>
+            <img id="arrow" src="images/arrow.svg" alt="arrow icon">
+        </a>
+    </section>
+    <section id="about" class="about container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, quae. Consequuntur in quis explicabo. Nesciunt, perspiciatis, aliquam nostrum alias neque provident numquam accusantium magni ullam ea repellat dicta tempora a voluptatum quam quos sint nihil harum. Illum natus facilis quasi consequuntur et atque repellat nihil omnis, nostrum aspernatur, laboriosam voluptate?</p>
+        <div class="about-exp">
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Software Engineer</h5>
+                        <p>Alfamart (2019-2022)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eius soluta distinctio mollitia, dolor quis nisi laborum, similique perspiciatis id suscipit totam, nesciunt quisquam assumenda quasi adipisci neque quo illo.</p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Software Engineer</h5>
+                        <p>Coding Studio (2019-2022)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eius soluta distinctio mollitia, dolor quis nisi laborum, similique perspiciatis id suscipit totam, nesciunt quisquam assumenda quasi adipisci neque quo illo.</p>
+            </div>
+            <div class="about-exp-item">
+                <div class="about-exp-item-header">
+                    <div>
+                        <h5>Software Engineer</h5>
+                        <p>Coding Studio (2019-2022)</p>
+                    </div>
+                    <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+                </div>
+                <p class="about-exp-item-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eius soluta distinctio mollitia, dolor quis nisi laborum, similique perspiciatis id suscipit totam, nesciunt quisquam assumenda quasi adipisci neque quo illo.</p>
+            </div>
+        </div>
+    </section>
+    <section id="work" class="work container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-md-5">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, unde aspernatur dicta assumenda, quas provident rerum ut dolores recusandae culpa cum libero perferendis illum dignissimos! Placeat cum accusamus aut quae consequuntur! Cupiditate inventore molestias quisquam accusantium necessitatibus dolorem, temporibus blanditiis assumenda, id ipsam dicta sed, excepturi sequi veniam alias corrupti.</p>
+            </div>
+            <div class="col-12 col-md-6 work-img">
+                <div id="work-1" class="work-img-item">
+                    <img src="images/work-1.png" alt="work 1" >
+                </div>
+                <div id="work-2" class="work-img-item">
+                    <img src="images/work-2.png" alt="work 2" >
+                </div>
+                <div id="work-3" class="work-img-item">
+                    <img src="images/work-3.png" alt="work 3" >
+                </div>
+               
+
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col-12 col-lg-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus accusamus voluptates itaque iste suscipit adipisci natus dolores. Quasi praesentium odit quisquam magni ipsa sequi facilis, veniam, quidem, ratione rem exercitationem! Omnis, doloribus, quod nam dolore sint officia explicabo et nemo voluptas quam illum debitis harum, laudantium reprehenderit? Incidunt, molestias eius?</p>
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Facebook.svg" alt="facebook icon">
+                        <p class="mb-0 ms-2">Reza Hungkul</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Instagram.svg" alt="instagram icon">
+                        <p class="mb-0 ms-2">@Hungkul05</p>
+                    </div>
+                    <div class="col d-flex align-items-center">
+                        <img class="w-25" src="images/Twitter.svg" alt="twitter icon">
+                        <p class="mb-0 ms-2">@Reza_Hungkul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inp_message" class="form-label">Message</label>
+                        <input type="text" class="form-control" id="inp_message" placeholder="Your Message">
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                  </form>
+
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
